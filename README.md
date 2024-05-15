@@ -22,6 +22,11 @@ Setup your environment variables in a local `.env` file.
 OPENAI_API_KEY="YOUR_KEY"
 ```
 
+Install dependencies.
+```sh
+pip install -r requirements.txt
+```
+
 Run the command line application.
 ```sh
 python src/main.py
