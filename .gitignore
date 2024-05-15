@@ -6,3 +6,6 @@
 
 # The python virtual environment installation
 /venv
+
+# Cached python files
+__pycache__
