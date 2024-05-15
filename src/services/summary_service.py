@@ -6,7 +6,7 @@ from typing import List
 def get_summary_prompt_template() -> str:
   return """
     Write a summary for the post and its comments.
-    Use an official and authoritative tone that is intended for casual users.
+    Use an formal tone that is intended for casual users.
     The max length of the summary is {summary_length} characters, shorter is ok.
 
     The post is:

@@ -12,4 +12,4 @@ def select_comments_by_post_id(db: MySQLConnectionAbstract, post_id: int) -> Lis
     cursor.execute('SELECT * FROM comment WHERE post_id = %s', (post_id,))
     comment_tuples = cursor.fetchall()
     column_names = [desc[0] for desc in cursor.description]
-  return map(lambda cts: Comment(dict(zip(column_names, cts))), comment_tuples)
+  return list(map(lambda cts: Comment(dict(zip(column_names, cts))), comment_tuples))
