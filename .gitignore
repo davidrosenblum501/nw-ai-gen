@@ -1,0 +1,8 @@
+# The environment variables, like API keys
+/.env*
+
+# The host data directory that the docker container will mount to
+/data
+
+# The python virtual environment installation
+/venv
